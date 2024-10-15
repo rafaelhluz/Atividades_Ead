@@ -1,0 +1,37 @@
+Atividade
+1. O que é TypeScript e quais são suas principais vantagens em relação ao
+JavaScript? Cite pelo menos duas vantagens.
+R: Tipagem Estática: TypeScript permite declarar tipos, ajudando a detectar erros durante a compilação, 
+antes da execução do código.
+
+2. Analise o seguinte código em TypeScript e explique qual é a diferença
+em relação ao equivalente em JavaScript:
+R: Declaração de Tipos: No TypeScript, os tipos de parâmetros e do retorno da função (name: string e : string) são explicitamente definidos. 
+Isso não é possível em JavaScript, que é totalmente dinâmico.
+Detecção de Erros: Se você tentar passar um valor de tipo diferente (como um número) para a função greet, 
+TypeScript emitirá um erro durante a compilação, enquanto JavaScript só falharia em tempo de execução.
+
+3. Quais os passos necessários para instalar o TypeScript e configurar um
+novo projeto? Liste pelo menos três etapas.
+R: Instalar o Node.js: Primeiramente, você deve ter o Node.js instalado no seu sistema, 
+pois ele é necessário para executar o npm (Node Package Manager).
+Instalar o TypeScript: Execute o comando npm install -g typescript no terminal 
+para instalar o TypeScript globalmente.
+Criar um Novo Projeto: Crie uma nova pasta para o seu projeto, 
+navegue até ela no terminal e execute tsc --init para criar um arquivo de configuração tsconfig.json.
+
+4. O que é o arquivo tsconfig.json e qual a sua importância na
+configuração do TypeScript? Cite pelo menos duas configurações que
+podem ser definidas nesse arquivo.
+R: tsconfig.json é o arquivo de configuração que define as opções do compilador TypeScript para um projeto. 
+Ele permite personalizar como o TypeScript deve ser compilado e como deve se comportar.
+"target": Especifica a versão do JavaScript que o TypeScript deve gerar (por exemplo, "ES5", "ES6").
+
+5. Depois de criar um arquivo TypeScript (index.ts), quais comandos
+você deve executar para compilar e rodar o código? Descreva
+brevemente o que acontece em cada etapa.
+R: Compilar o Código: Execute o comando tsc index.ts. Isso compila o arquivo TypeScript (index.ts) em um arquivo JavaScript (index.js). 
+O compilador verifica o código em busca de erros de tipo e, se tudo estiver correto, gera o arquivo correspondente.
+Executar o Código Compilado: Após a compilação, execute o código JavaScript gerado usando Node.js 
+com o comando node index.js. Isso executa o script JavaScript no ambiente Node, 
+permitindo ver o resultado do seu código.
